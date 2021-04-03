@@ -10,22 +10,22 @@ const Slider = () => {
     const timeout = useRef(null);
 
     //照片自動撥放設定
-    // useEffect(() => {
-    //     const nextSlide = () => {
-    //         setCurrent(current => (current === sliderLength - 1 ? 0 : current + 1))
-    //     }
+    useEffect(() => {
+        const nextSlide = () => {
+            setCurrent(current => (current === sliderLength - 1 ? 0 : current + 1))
+        }
 
-    //     //設定setTimeout
-    //     timeout.current = setTimeout(nextSlide, 2500)
+        //設定setTimeout
+        timeout.current = setTimeout(nextSlide, 2500)
 
-    //     //設定clearTimeout
-    //     return () => {
-    //         if (timeout.current) {
-    //             clearTimeout(timeout.current)
-    //         }
-    //     }
+        //設定clearTimeout
+        return () => {
+            if (timeout.current) {
+                clearTimeout(timeout.current)
+            }
+        }
 
-    // }, [current, sliderLength]);
+    }, [current, sliderLength]);
 
     //左邊箭頭click事件設定
     const leftHandle = () => {

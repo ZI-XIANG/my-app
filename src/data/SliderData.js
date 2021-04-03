@@ -4,12 +4,6 @@ import s3 from '../images/s3.jpg'
 
 export const SliderData = [
     {
-        title: '園區一覽',
-        image: s1,
-        path: '/homes',
-        alt: '園區一覽'
-    },
-    {
         title: '游泳區',
         image: s2,
         path: '/homes',
@@ -20,5 +14,11 @@ export const SliderData = [
         image: s3,
         path: '/homes',
         alt: '草地區'
+    },
+    {
+        title: '園區一覽',
+        image: s1,
+        path: '/homes',
+        alt: '園區一覽'
     }
 ];
