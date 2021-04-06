@@ -626,7 +626,7 @@ span {
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
-    width: 40%;
+    width: 50%;
     flex-direction: row;
     flex-wrap: wrap;
     min-width: 520px;
@@ -636,15 +636,15 @@ span {
     height: 35rem;
   }
   .introRight {
-    width: 60%;
+    width: 50%;
   }
   .introContent {
     background: none;
     flex-direction: column-reverse;
   }
   .introLef1 {
-    width: 200px;
-    height: 300px;
+    width: 210px;
+    height: 250px;
   }
   .introLef2 {
     width: 250px;

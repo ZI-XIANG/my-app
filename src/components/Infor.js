@@ -15,8 +15,8 @@ const Infor = () => {
                 <div className="inforTxt">
                     <p className="news">最新消息</p>
                     <div className="msg" >
-                        <p data-aos="fade-right" data-aos-duration="1000" >春季營業時間每週<span>五六日ㄧ,</span>
-                        餐廳供餐到四點半,泳池五點清場整理,
+                        <p data-aos="fade-right" data-aos-duration="1000" >春季營業時間每週<span>五六日ㄧ</span>
+                       ,餐廳供餐到四點半,泳池五點清場整理,
                        也有提供寶貝狗寄宿，住宿部分全年無休喔！
                        園區內禁帶外食、禁菸、請勿嚼食檳榔或攜帶酒精飲料!兒童/150以下人員禁止下水喔!</p>
                     </div>
