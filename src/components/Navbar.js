@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
@@ -13,13 +12,13 @@ const Navbar = () => {
     return (
         <div className="nav">
             <h2 className="logo">
-                <Link to="/">GOGO WATER</Link>
+                <a href="#slider">GOGO WATER</a>
             </h2>
-            <ul  onClick={openMenu} className={open ? "navLink" : "navLink active"}>
+            <ul onClick={openMenu} className={open ? "navLink" : "navLink active"}>
                 <div className="navMenu">
-                    <li><Link to="/">最新消息</Link></li>
-                    <li><Link to="/">園區介紹</Link></li>
-                    <li><Link to="/">交通指南</Link></li>
+                    <li><a href="#infor">最新消息</a></li>
+                    <li><a href="#intro">園區介紹</a></li>
+                    <li><a href="#contact">交通指南</a></li>
 
                 </div>
 

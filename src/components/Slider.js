@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom'
 import { SliderData } from '../data/SliderData';
 import { GiSittingDog } from 'react-icons/gi';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
@@ -44,7 +43,7 @@ const Slider = () => {
     }
 
     return (
-        <div className="sliderSection">
+        <div id="slider" className="sliderSection">
             <div className="sliderWrapper">
                 {
                     SliderData.map((slide, index) => (
@@ -57,7 +56,7 @@ const Slider = () => {
                                         </div>
                                         <div className="sliderTxt">
                                             <h2>{slide.title}</h2>
-                                            <Link to={slide.link}> <GiSittingDog className="sBars" /></Link>
+                                            <GiSittingDog className="sBars" />
                                         </div>
 
                                     </>

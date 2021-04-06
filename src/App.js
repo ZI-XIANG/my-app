@@ -1,4 +1,6 @@
 import './App.css';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Infor from './components/Infor';
 import Introduction from './components/Introduction';
 import Navbar from './components/Navbar';
@@ -12,6 +14,8 @@ function App() {
       <Slider />
       <Infor />
       <Introduction />
+      <Contact />
+      <Footer />
     </div>
   );
 }
