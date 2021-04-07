@@ -1,8 +1,13 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const Contact = () => {
     return (
-        <div id="contact" className="contact">
+        <div data-aos="fade-up"
+            data-aos-duration="1500" id="contact" className="contact">
             <div className="contactContent">
                 <div className="contactTxt">
                     <p><span>苗栗縣苗栗市苗栗縣苑裡鄉山腳里錦山22-2號</span></p>
