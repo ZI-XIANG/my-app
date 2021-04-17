@@ -674,6 +674,7 @@ span {
   }
   .mapContent {
     width: 50%;
+    text-align: center;
   }
   .map {
     width: 500px;
