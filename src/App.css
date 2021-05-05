@@ -31,7 +31,27 @@ html {
   color: white;
   background: #111;
   opacity: .7;
-  padding: 2.1rem 1.9rem;
+  transition: .5s ease;
+}
+
+.sticky {
+  background: #fff;
+  padding: 2.3rem 1.9rem;
+  opacity: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.sticky .logo a {
+  color: #111;
+}
+
+.sticky .navLink li a {
+  color: black;
+  opacity: .8;
+}
+
+.sticky .bars {
+  color: black;
 }
 
 .logo a {
@@ -436,6 +456,12 @@ span {
   display: none;
 }
 
+@media screen and (max-width:500px) {
+  .sticky .navLink li a {
+    color: #fff;
+  }
+}
+
 @media screen and (min-width:576px) {
   .inforImg {
     flex-direction: row;
@@ -471,6 +497,10 @@ span {
 }
 
 @media screen and (min-width:768px) {
+  .sticky .navLink li a {
+    color: black;
+    opacity: .8;
+  }
   .bars {
     display: none;
   }

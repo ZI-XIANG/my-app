@@ -4,13 +4,21 @@ import { AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
     const [open, setOpen] = useState(true);
+    const [scroll, setScroll] = useState(false);
 
     const openMenu = () => {
         setOpen(!open)
     };
 
+    window.addEventListener('scroll', function () {
+        const sticky = window.scrollY > 0
+        setScroll(sticky)
+    })
+
+
+
     return (
-        <div className="nav">
+        <div className={scroll ? "nav sticky" : "nav"}>
             <h2 className="logo">
                 <a href="#slider">GOGO WATER</a>
             </h2>
