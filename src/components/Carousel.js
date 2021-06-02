@@ -30,7 +30,7 @@ SwiperCore.use([EffectCoverflow, Pagination]);
 AOS.init();
 const Carousel = () => {
 
-    const [imgSrc, setImgSrc] = useState('')
+    const [imgSrc, setImgSrc] = useState(null)
 
 
 
@@ -59,6 +59,8 @@ const Carousel = () => {
                 </div>
 
 
+
+
                 <h2 className="wind">吹風設備</h2>
                 <div className="fareIcon">
                     <BiWind className="fIcon" />
@@ -74,7 +76,7 @@ const Carousel = () => {
                 </div>
 
 
-
+                <div className={imgSrc ? 'mask' : null}></div>
             </div>
 
 
@@ -90,9 +92,11 @@ const Carousel = () => {
                 </Swiper>
 
                 <div className={imgSrc ? "details showImg" : "details"}>
-                    <AiOutlineCloseCircle onClick={() => setImgSrc('')} className="closeDetailsImg" />
+                    <AiOutlineCloseCircle onClick={() => setImgSrc(null)} className="closeDetailsImg" />
                     <img src={imgSrc} alt="img" />
                 </div>
+
+
             </div>
         </div>
     )

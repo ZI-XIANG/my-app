@@ -13,17 +13,17 @@ function App() {
 
 
   return (
-    <>
-      <div>
-        <Navbar />
-        <Slider />
-        <Infor />
-        <Introduction />
-        <Carousel />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+
+    <div>
+      <Navbar />
+      <Slider />
+      <Infor />
+      <Introduction />
+      <Carousel />
+      <Contact />
+      <Footer />
+    </div>
+
   );
 }
 

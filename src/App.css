@@ -326,14 +326,15 @@ html {
 
 .showImg {
   display: block;
+  z-index: 999;
 }
 
 .closeDetailsImg {
   position: absolute;
-  right: -17px;
-  top: -22px;
+  right: -23px;
+  top: -23px;
   font-size: 46px;
-  /* color: rgb(255, 253, 253); */
+  color: rgb(255, 253, 253);
   cursor: pointer;
 }
 
@@ -530,6 +531,17 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .6;
+  top: 0;
+  left: 0;
+  z-index: 998;
 }
 
 /* -----------footer--------------- */

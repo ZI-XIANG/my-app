@@ -9,7 +9,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 AOS.init();
 const Infor = () => {
-    const [imgSrc, setImgSrc] = useState('')
+    const [imgSrc, setImgSrc] = useState(null)
 
 
 
@@ -53,10 +53,12 @@ const Infor = () => {
                             <img src={i4} alt="img" />
                         </div>
 
+                        <div className={imgSrc ? 'mask' : null}></div>
+
                     </div>
 
                     <div className={imgSrc ? "details showImg" : "details"}>
-                        <AiOutlineCloseCircle onClick={() => setImgSrc('')} className="closeDetailsImg" />
+                        <AiOutlineCloseCircle onClick={() => setImgSrc(null)} className="closeDetailsImg" />
                         <img src={imgSrc} alt="img" />
                     </div>
                 </div>
