@@ -62,7 +62,7 @@ const Carousel = () => {
                 <h2 className="wind">吹風設備</h2>
                 <div className="fareIcon">
                     <BiWind className="fIcon" />
-                    <p>吹水雞 5分鐘/10元</p>
+                    <p>吹水機 5分鐘/10元</p>
                 </div>
                 <div className="fareIcon">
                     <BiWind className="fIcon" />
