@@ -95,8 +95,8 @@ html {
 .navLink li a {
   color: white;
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 1.5rem;
-  margin: 40px 60px;
+  font-size: 1.2rem;
+  margin: 22px 50px;
   display: inline-block;
   letter-spacing: 0.05rem;
 }
@@ -110,6 +110,20 @@ html {
 .navMenu a:hover {
   transition: .3s ease;
   color: #9bbaf0;
+}
+
+.navMenu li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #9bbaf0;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+
+.navMenu li:hover:hover::after {
+  width: 100%;
 }
 
 /* ---------------slider----------- */
@@ -220,6 +234,10 @@ html {
   width: 100%;
 }
 
+.inforTxt h2 {
+  letter-spacing: 1px;
+}
+
 .inforTxt p {
   letter-spacing: 0.09rem;
   line-height: 27px;
@@ -281,6 +299,37 @@ html {
 .msg p {
   opacity: .8;
   text-align: justify;
+}
+
+.details {
+  width: 360px;
+  height: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: none;
+}
+
+.details img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.showImg {
+  display: block;
+}
+
+.closeDetailsImg {
+  position: absolute;
+  right: -26px;
+  top: -26px;
+  font-size: 46px;
+  /* color: rgb(255, 253, 253); */
+  cursor: pointer;
 }
 
 /*----------- Introduction ------------*/
@@ -354,7 +403,7 @@ span {
   left: 0;
   background: black;
   opacity: .7;
-  transition: .3s ease;
+  transition: .5s ease;
 }
 
 .imgHover:hover .introTxt {
@@ -365,14 +414,14 @@ span {
   color: white;
   text-align: center;
   font-size: 1.4rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   letter-spacing: 0.1rem;
 }
 
 /*------------contact-------------  */
 
 .contact {
-  background: #fef9f4;
+  background: #fff;
 }
 
 .contactContent {
@@ -396,6 +445,86 @@ span {
 .map {
   width: 350px;
   height: 350px;
+}
+
+/* -----------carousel--------------- */
+
+.fare {
+  background: #fef9f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fareLeft {
+  flex-basis: 41%;
+  margin: 1rem auto;
+  /* width: 294px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding-left: 149px; */
+}
+
+.fareLeft .dogTicket {
+  margin: 0 0 13px;
+  letter-spacing: 2px;
+  color: crimson;
+}
+
+.fareLeft .wind {
+  margin: 2rem 0 13px;
+  letter-spacing: 2px;
+  color: crimson;
+}
+
+.fIcon {
+  font-size: 27px;
+  margin-right: 5px;
+}
+
+.fareIcon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fareIcon p {
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
+.carousel .swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.carousel .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  margin: auto;
+  object-fit: cover;
+}
+
+.carousel {
+  position: relative;
+  flex-basis: 50%;
+  width: 50%;
+  height: 512px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* -----------footer--------------- */
@@ -598,6 +727,23 @@ span {
   .rightIcon {
     font-size: 2rem;
   }
+  .fare {
+    background: #fef9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+  }
+  .fareLeft {
+    flex-basis: 41%;
+    margin: auto;
+    /* width: 294px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 149px;
+  }
 }
 
 @media screen and (min-width:992px) {
@@ -613,15 +759,26 @@ span {
     line-height: 2.5rem;
     letter-spacing: 0.06rem;
   }
+  .details {
+    width: 500px;
+    height: 600px;
+  }
+  
 }
 
 @media screen and (min-width:1200px) {
+  .imgHover .introTxt1 p {
+    margin-top: 4rem;
+  }
   .navMenu {
-    margin-right: 2rem;
+    margin-right: 1rem;
     justify-content: flex-end;
   }
   .navMenu li {
-    margin: 0 2rem;
+    margin: 0 1.2rem;
+  }
+  .inforTxt h2 {
+    font-size: 1.8rem;
   }
   .inforContent {
     display: flex;
@@ -647,7 +804,7 @@ span {
     line-height: 3.2rem;
   }
   .news {
-    padding-bottom: 2rem;
+    padding: 5rem 0 1rem;
   }
   .intro {
     flex-direction: row-reverse;
@@ -751,5 +908,9 @@ span {
     align-items: center;
     justify-content: center;
     margin-top: 2.2rem;
+  }
+  .details {
+    width: 600px;
+    height: 600px;
   }
 }

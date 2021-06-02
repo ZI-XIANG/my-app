@@ -37,7 +37,7 @@ const Introduction = () => {
 
                     <div className="introImg imgHover introLef2">
                         <img data-aos="flip-left" data-aos-duration ="1000" className="imgMsg" src={t1} alt="img" />
-                        <div className="introTxt">
+                        <div className="introTxt introTxt1">
                             <p>寵物洗澡區</p>
                         </div>
                     </div>

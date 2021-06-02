@@ -26,6 +26,7 @@ const Navbar = () => {
                 <div className="navMenu">
                     <li><a href="#infor">最新消息</a></li>
                     <li><a href="#intro">園區介紹</a></li>
+                    <li><a href="#carousel">入園票價</a></li>
                     <li><a href="#contact">交通指南</a></li>
 
                 </div>
