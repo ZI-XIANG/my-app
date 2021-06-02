@@ -36,7 +36,7 @@ html {
 
 .sticky {
   background: #fff;
-  padding: 2.3rem 1.9rem;
+  padding: 2rem 1.9rem;
   opacity: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
@@ -330,8 +330,8 @@ html {
 
 .closeDetailsImg {
   position: absolute;
-  right: -26px;
-  top: -26px;
+  right: -17px;
+  top: -22px;
   font-size: 46px;
   /* color: rgb(255, 253, 253); */
   cursor: pointer;
@@ -919,6 +919,6 @@ span {
   }
   .details {
     width: 600px;
-    height: 600px;
+    height: 550px;
   }
 }
