@@ -25,7 +25,7 @@ const Infor = () => {
         <div id="infor" className="infor">
             <div className="inforContent">
                 <div className="inforTxt">
-                    <h2 className="animate__animated animate__pulse animate__infinite animate__slow">GogoWater 狗狗水世界</h2>
+                    <h2 className="inforTitle animate__animated animate__pulse animate__infinite animate__slow">GogoWater 狗狗水世界</h2>
                     <p className="news">最新消息</p>
                     <div className="msg" >
                         <p data-aos="fade-right" data-aos-duration="1000" >春季營業時間每週<span>五六日ㄧ</span>

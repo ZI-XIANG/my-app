@@ -234,6 +234,11 @@ html {
   width: 100%;
 }
 
+.inforTitle {
+  margin: 2rem auto;
+  text-align: center;
+}
+
 .inforTxt h2 {
   letter-spacing: 1px;
 }
@@ -763,7 +768,6 @@ span {
     width: 500px;
     height: 600px;
   }
-  
 }
 
 @media screen and (min-width:1200px) {
@@ -808,6 +812,10 @@ span {
   }
   .intro {
     flex-direction: row-reverse;
+  }
+  .inforTitle {
+    margin: 0;
+    text-align: initial;
   }
   .introLef {
     display: flex;
